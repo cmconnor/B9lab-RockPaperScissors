@@ -1,0 +1,113 @@
+{
+  "contract_name": "rpsJudge",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "gameHash",
+          "type": "bytes32"
+        }
+      ],
+      "name": "resolveGame",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "gameHash",
+          "type": "bytes32"
+        },
+        {
+          "name": "player",
+          "type": "address"
+        },
+        {
+          "name": "move",
+          "type": "uint8"
+        },
+        {
+          "name": "secretKey",
+          "type": "bytes32"
+        }
+      ],
+      "name": "revealMove",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "gameOwner",
+          "type": "address"
+        },
+        {
+          "name": "player1",
+          "type": "address"
+        },
+        {
+          "name": "player2",
+          "type": "address"
+        },
+        {
+          "name": "startTime",
+          "type": "uint256"
+        }
+      ],
+      "name": "newGame",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "gameHash",
+          "type": "bytes32"
+        },
+        {
+          "name": "player",
+          "type": "address"
+        },
+        {
+          "name": "moveHash",
+          "type": "bytes32"
+        }
+      ],
+      "name": "submitMove",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    }
+  ],
+  "unlinked_binary": "0x",
+  "networks": {},
+  "schema_version": "0.0.5",
+  "updated_at": 1518856641263
+}
